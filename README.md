@@ -1,7 +1,7 @@
 <h2>Overview</h2>
 This is an ASP.NET MVC 5 E-commerce website designed to provide a comprehensive shopping experience for users and a robust management system for administrators. The project includes features for managing products, categories, brands, suppliers, discounts, and orders. Users can browse products, place orders, and manage their profiles.
 
-<h2>Features</h2>h2>
+<h2>Features</h2>
 <h3>Admin Panel</h3>
 <strong>Admins </strong> have a wide range of features to manage the e-commerce platform effectively:
 
@@ -39,34 +39,87 @@ Follow these steps to set up and run the project on your local machine:
       <li>Change the data source in Web.config to your SQL Server instance (only change the data source, leave other settings as they are).</li>
     </ul>
   </li>
-  <li><h2>Update Database:</h2></li>
+  <li><h2>Update Database:</h2>
+    <ul>
+      <li>Open Tools -> NuGet Package Manager -> Package Manager Console.</li>
+      <li><strong>Run the command:</strong> update-database.</li>
+    </ul>
+  </li>
   
 </ul>
 
+<h2>Seed Demo Data:</h2>
+<ul>
+  <li>Open insert-demo-data.sql file (located in the project folder) in SQL Server Management Studio.</li>
+  <li>Press Ctrl+A to select all, then click Execute or press F5.</li>
+</ul>
+<h2>Run the Project:</h2>
+<u>
+  <li>Move to Visual Studio and open HomeController.</li>
+  <li>Run the project.</li>
+</u>
 
-
-
-
-
-
-
-
-Open Tools -> NuGet Package Manager -> Package Manager Console.
-Run the command: update-database.
-Seed Demo Data:
-
-Open insert-demo-data.sql file (located in the project folder) in SQL Server Management Studio.
-Press Ctrl+A to select all, then click Execute or press F5.
-Run the Project:
-
-Move to Visual Studio and open HomeController.
-Run the project.
-Admin Login:
-
+<h2>Admin Login:</h2>
 Username: admin@example.com
 Password: Admin@123
-Customer Login:
 
+<h2>Customer Login:</h2>
 Username: customer@example.com
 Password: Customer@123
+
 Now the E-commerce project will work fine!
+
+<h1>Alternative Options</h1>
+<strong>If update-database does not work, follow these steps:</strong>
+
+Delete the Migrations Folder.
+Enable Migrations:
+Run the command: Enable-Migrations.
+Create Initial Migration:
+Run the command: Add-Migration mohiuddin-ecommerce.
+Seed User Data:
+----------------------------
+Add the following code to the configuration file to seed admin and customer users:
+var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
+var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
+
+if (!roleManager.RoleExists("Admin"))
+{
+    roleManager.Create(new IdentityRole("Admin"));
+}
+
+if (!roleManager.RoleExists("Customer"))
+{
+    roleManager.Create(new IdentityRole("Customer"));
+}
+
+if (userManager.FindByName("admin@example.com") == null)
+{
+    var adminUser = new ApplicationUser { UserName = "admin@example.com", Email = "admin@example.com" };
+    var result = userManager.Create(adminUser, "Admin@123");
+
+    if (result.Succeeded)
+    {
+        userManager.AddToRole(adminUser.Id, "Admin");
+    }
+}
+
+if (userManager.FindByName("customer@example.com") == null)
+{
+    var customerUser = new ApplicationUser { UserName = "customer@example.com", Email = "customer@example.com" };
+    var result = userManager.Create(customerUser, "Customer@123");
+
+    if (result.Succeeded)
+    {
+        userManager.AddToRole(customerUser.Id, "Customer");
+    }
+}
+------------------------
+
+Run Update-Database:
+
+Run the command: Update-Database.
+If Needed:
+
+Check the database catalog name in Web.config.
+Once completed, run the project from the HomeController.
