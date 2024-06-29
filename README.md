@@ -1,6 +1,13 @@
 <h2>Overview</h2>
 This is an ASP.NET MVC 5 E-commerce website designed to provide a comprehensive shopping experience for users and a robust management system for administrators. The project includes features for managing products, categories, brands, suppliers, discounts, and orders. Users can browse products, place orders, and manage their profiles.
 
+## Video Demonstration
+
+Check out our [video demonstration](https://www.youtube.com/watch?v=8Q7e4RHjsoE) on YouTube.
+
+[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=8Q7e4RHjsoE)
+
+
 <h2>Features</h2>
 <h3>Admin Panel</h3>
 <strong>Admins </strong> have a wide range of features to manage the e-commerce platform effectively:
@@ -78,7 +85,7 @@ Run the command: Enable-Migrations.
 Create Initial Migration:
 Run the command: Add-Migration mohiuddin-ecommerce.
 Seed User Data:
-----------------------------
+
 Add the following code to the configuration file to seed admin and customer users:
 <br />
 
@@ -116,7 +123,7 @@ if (userManager.FindByName("customer@example.com") == null)
         userManager.AddToRole(customerUser.Id, "Customer");
     }
 }
-------------------------
+
 
 Run Update-Database:
 
