@@ -1,0 +1,95 @@
+﻿@model PaginatedList<Mohiuddin_EcommerceWebsite.Models.Product>
+
+@{
+    ViewBag.Title = "Shop";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="breadcrumb-section bg-danger">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb__text">
+                    <h2>Happy Shopping in Online</h2>
+                    <div class="breadcrumb__option">
+                        <a href="/">Home</a>
+                        <span>BuyandPick.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container mt-5 mb-5">
+
+    <div class="card border-0 ">
+        <div class="card-body">
+            <div class="row">
+                @foreach (var product in Model)
+                {
+                    <div class="col-md-3">
+                        <div class="card mb-4">
+                            <img src="@Url.Content(product.ImageUrl)" class="card-img-top" alt="@product.ProductName">
+                            <div class="card-body">
+                                <h5 class="card-title">@product.ProductName</h5>
+                                <p class="card-text">TK @product.Price</p>
+                                <a href="@Url.Action("ProductDetails", "Home", new { id = product.ProductId })" class="btn btn-primary">Details</a>
+                                <a href="#" class="btn btn-success add-to-cart" data-id="@product.ProductId">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="mt-5">
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    @if (Model.HasPreviousPage)
+                    {
+                        <li class="page-item"><a class="page-link" href="@Url.Action("Shop", new { page = Model.PageIndex - 1 })">Previous</a></li>
+                    }
+                    @for (int i = 1; i <= Model.TotalPages; i++)
+                    {
+                        <li class="page-item @(i == Model.PageIndex ? "active" : "")"><a class="page-link" href="@Url.Action("Shop", new { page = i })">@i</a></li>
+                    }
+                    @if (Model.HasNextPage)
+                    {
+                        <li class="page-item"><a class="page-link" href="@Url.Action("Shop", new { page = Model.PageIndex + 1 })">Next</a></li>
+                    }
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<script src="~/Scripts/jquery-3.7.1.min.js"></script>
+<script>
+        $(document).ready(function () {
+            $('.add-to-cart').click(function (e) {
+                e.preventDefault();
+                var productId = $(this).data('id');
+                $.ajax({
+                    url: '@Url.Action("AddToCart", "Cart")',
+                    type: 'POST',
+                    data: { productId: productId },
+                    success: function (response) {
+                        if (response.success) {
+                            toastr.success(response.message);
+                            $('.humberger__menu__cart ul li span').text(response.totalItemCount);
+                            $('.header__cart__price span').text('TK' + response.totalPrice.toFixed(2));
+                        } else {
+                            toastr.error('There was an error adding the product to the cart.');
+                        }
+                    },
+                    error: function () {
+                        toastr.error('There was an error adding the product to the cart.');
+                    }
+                });
+            });
+        });
+</script>
+

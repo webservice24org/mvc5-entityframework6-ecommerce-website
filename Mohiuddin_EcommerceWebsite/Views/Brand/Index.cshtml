@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Mohiuddin_EcommerceWebsite.Models.Brand>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title float-start">Brand List</h4>
+            <h4 class="float-end">@Html.ActionLink("Create New", "Create", null, new {@class="btn btn-secondary"})</h4>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table id="brandTable"
+                       class="display table table-striped table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.BrandId)</th>
+                            <th>@Html.DisplayNameFor(model => model.BrandName)</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.BrandId)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.BrandName)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.BrandId }, new { @class = "btn btn-primary" }) 
+                                    @Html.ActionLink("Details", "Details", new { id = item.BrandId }, new { @class = "btn btn-info" }) 
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.BrandId }, new { @class = "btn btn-danger" })
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

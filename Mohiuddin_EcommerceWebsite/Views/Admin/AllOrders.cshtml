@@ -1,0 +1,65 @@
+﻿@model List<Mohiuddin_EcommerceWebsite.Models.ViewModels.OrderViewModel>
+@using Mohiuddin_EcommerceWebsite.Models
+@{
+    ViewBag.Title = "AllOrders";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h2>All Orders</h2>
+            </div>
+            <div class="card-body">
+
+                
+
+                <table class="table table-bordered table-striped allOrders">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Order Date</th>
+                            <th>Name</th>
+                            <th>Mobile</th>
+                            <th>Shipping Address</th>
+                            <th>Total Payable</th>
+                            <th>Order Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var order in Model)
+                        {
+                            <tr>
+                                <td>@order.OrderId</td>
+                                <td>@order.OrderDate</td>
+                                <td>@order.Name</td>
+                                <td>@order.Mobile</td>
+                                <td>@order.ShippingAddress</td>
+                                <td>@order.TotalPayable</td>
+                                <td>
+                                    <form action="@Url.Action("UpdateOrderStatus", "Admin")" method="post">
+                                        @Html.AntiForgeryToken()
+                                        @Html.Hidden("orderId", order.OrderId)
+                                        <select name="orderStatus" class="form-control">
+                                            @foreach (var status in Enum.GetValues(typeof(OrderStatus)))
+                                            {
+                                                <option value="@status" @(status.Equals(order.OrderStatus) ? "selected" : "")>@status</option>
+                                            }
+                                        </select>
+                                        <button type="submit" class="btn btn-primary mt-1">Update</button>
+                                    </form>
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Details", "AdminOrderDetails", new { orderId = order.OrderId }, new { @class = "btn btn-success btn-sm" })
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+</div>

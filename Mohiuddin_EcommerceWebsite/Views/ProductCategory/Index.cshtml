@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Mohiuddin_EcommerceWebsite.Models.ProductCategory>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    string demoImagePath = Url.Content("~/Images/product-category/product-category.jpg");
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="float-start">Product Category List</h4>
+                @Html.ActionLink("Create New", "Create", null, new {@class="btn btn-secondary float-end"})
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered table-striped cateogryTable">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ProductCategoryId)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.CategoryName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.CategoryImage)
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ProductCategoryId)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.CategoryName)
+                                </td>
+                                <td>
+                                    @{
+                                        var imageUrl = string.IsNullOrEmpty(item.CategoryImage) ? demoImagePath : Url.Content(item.CategoryImage);
+                                    }
+
+                                    <img src="@imageUrl" class="rounded img-thumbnail" style="max-width: 100px;" />
+
+                                   
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.ProductCategoryId }, new { @class="btn btn-primary" }) 
+                                    @Html.ActionLink("Details", "Details", new { id = item.ProductCategoryId }, new { @class = "btn btn-info" }) 
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.ProductCategoryId }, new { @class = "btn btn-danger" })
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

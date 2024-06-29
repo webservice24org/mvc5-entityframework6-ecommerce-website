@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Mohiuddin_EcommerceWebsite.Models.ProductSubCategory>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    string demoImagePath = Url.Content("~/Images/product-category/product-category.jpg");
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="float-start">Add New Sub Category</h4>
+                @Html.ActionLink("Create New", "Create", null, new {@class="btn btn-success float-end"})
+            </div>
+            <div class="card-body">
+
+                <table class="table table-bordered table-striped subCategoryTable">
+                    <thead>
+                        <tr>
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ProductCategory.CategoryName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.SubCategoryName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.SubCategoryImg)
+                            </th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ProductSubCategoryId)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ProductCategory.CategoryName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.SubCategoryName)
+                                </td>
+                                <td>
+                                    @{
+                                        var imageUrl = string.IsNullOrEmpty(item.SubCategoryImg) ? demoImagePath : Url.Content(item.SubCategoryImg);
+                                    }
+
+                                    <img src="@imageUrl" class="rounded img-thumbnail" style="max-width: 100px;" />
+
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.ProductSubCategoryId }, new {@class="btn btn-primary"}) 
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.ProductSubCategoryId }, new { @class = "btn btn-danger" })
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

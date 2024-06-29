@@ -1,0 +1,113 @@
+﻿@model Mohiuddin_EcommerceWebsite.Models.ViewModels.ProfileViewModel
+@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "User Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5 mb-5">
+    <div class="card border-0 shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <div class="card-header text-center">
+            <h4>Your Profile</h4>
+        </div>
+        <div class="row">
+            <div class="col-md-8 ">
+
+
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p class="fw-bold">First Name:</p>
+                        </div>
+                        <div class="col-md-9">
+                            <p>@Model.FirstName</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p class="fw-bold">Last Name:</p>
+                        </div>
+                        <div class="col-md-9">
+                            <p>@Model.LastName</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p class="fw-bold">Email:</p>
+                        </div>
+                        <div class="col-md-9">
+                            <p>@Model.Email</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p class="fw-bold">Phone Number:</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p>@Model.PhoneNumber</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p class="fw-bold">State:</p>
+                        </div>
+                        <div class="col-md-9">
+                            <p>@Model.State</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p class="fw-bold">District:</p>
+                        </div>
+                        <div class="col-md-9">
+                            <p>@Model.District</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p class="fw-bold">Thana:</p>
+                        </div>
+                        <div class="col-md-9">
+
+                            <p>@Model.Thana</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p class="fw-bold">Postal Code:</p>
+                        </div>
+                        <div class="col-md-9">
+                            <p>@Model.PostalCode</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="fw-bold">Default Shipping Address</p>
+                            <p class="form-control-static">@Model.Address</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        @Html.ActionLink("Edit Profile", "EditProfile", "Account", new { id = User.Identity.GetUserId() }, new { @class = "btn btn-primary" })
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 mt-3">
+                
+                <p>Profile Picture</p>
+                @if (!string.IsNullOrEmpty(Model.PicturePath))
+                {
+                    <img src="@Url.Content(Model.PicturePath)" alt="Profile Picture" class="img-thumbnail" style="max-width: 200px;" />
+                }
+                else
+                {
+                    <img src="~/Images/Users/mohiuddin_1280860.jpg" id="imageFile" class="img-thumbnail" style="max-width:200px;" />
+                }
+                
+            </div>
+        </div>
+    </div>
+</div>

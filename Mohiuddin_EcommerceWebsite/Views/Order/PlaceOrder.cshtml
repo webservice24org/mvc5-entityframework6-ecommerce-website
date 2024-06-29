@@ -1,0 +1,148 @@
+﻿@model Mohiuddin_EcommerceWebsite.Models.ViewModels.OrderViewModel
+
+@{
+    ViewBag.Title = "PlaceOrder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="breadcrumb-section bg-success">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb__text">
+                    <h2>Checkout</h2>
+                    <div class="breadcrumb__option">
+                        <a href="/">Home</a>
+                        <span>Checkout</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="checkout spad">
+    <div class="container">
+        <div class="checkout__form">
+            <h4>Billing Details</h4>
+            @using (Html.BeginForm("PlaceOrder", "Order", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="checkout__input">
+                                    <p>Name<span>*</span></p>
+                                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.Name)
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="checkout__input">
+                                    <p>Mobile<span>*</span></p>
+                                    @Html.TextBoxFor(m => m.Mobile, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.Mobile)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <div class="checkout__input">
+                                    <p>Order notes<span>*</span></p>
+                                    @Html.TextBoxFor(m => m.OrderNote, new { @class = "form-control", @placeholder = "Notes about your order" })
+                                    @Html.ValidationMessageFor(m => m.OrderNote)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout__input">
+                            <p>Shipping Address<span>*</span></p>
+                            @Html.TextBoxFor(m => m.ShippingAddress, new { @class = "form-control", @placeholder = "Street Address" })
+                            @Html.ValidationMessageFor(m => m.ShippingAddress)
+                        </div>
+
+                        <div class="shippingArea">
+                            <h4 class="mb-2">Ship to</h4>
+                            <div class="checkout__input__radio">
+                                <label for="insideDhaka">
+                                    Inside Dhaka (100 TK)
+                                    @Html.RadioButtonFor(m => m.ShippingArea, "InsideDhaka", new { @id = "insideDhaka", @onchange = "updateTotal()" })
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="checkout__input__radio">
+                                <label for="outsideDhaka">
+                                    Outside Dhaka (200 TK)
+                                    @Html.RadioButtonFor(m => m.ShippingArea, "OutsideDhaka", new { @id = "outsideDhaka", @onchange = "updateTotal()" })
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="checkout__order">
+                            <h4>Your Order</h4>
+                            <table class="table table-bordered" id="orderDetailsList">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 80%">Product</th>
+                                        <th style="width: 5%">Quantity</th>
+                                        <th style="width: 15%">Unit Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @for (int i = 0; i < Model.OrderDetails.Count; i++)
+                                    {
+                                        <tr>
+                                            <td style="width: 80%">
+                                                @Html.HiddenFor(m => m.OrderDetails[i].ProductId)
+                                                @Html.HiddenFor(m => m.OrderDetails[i].ProductName)
+                                                @Html.DisplayFor(m => m.OrderDetails[i].ProductName)
+                                            </td>
+                                            <td style="width: 5%">
+                                                @Html.HiddenFor(m => m.OrderDetails[i].Quantity)
+                                                @Html.DisplayFor(m => m.OrderDetails[i].Quantity)
+                                            </td>
+                                            <td style="width: 15%">
+                                                @Html.HiddenFor(m => m.OrderDetails[i].Price)
+                                                @Html.DisplayFor(m => m.OrderDetails[i].Price)
+                                            </td>
+                                            @Html.HiddenFor(m => m.OrderDetails[i].Subtotal)
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+
+                            <div class="checkout__order__subtotal">Subtotal <span id="subtotal">@String.Format("TK {0:N2}", Model.OrderDetails.Sum(od => od.Subtotal))</span></div>
+                            <div class="checkout__order__total">Shipping Cost<span id="shippingCost">TK 0.00</span></div>
+                            <div class="checkout__order__total">Total Payable<span id="total">TK @String.Format("{0:N2}", Model.TotalPayable)</span></div>
+
+                            <button type="submit" class="site-btn">PLACE ORDER</button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+<script src="~/Scripts/jquery-3.7.1.min.js"></script>
+<script>
+    function updateTotal() {
+        var shippingCost = 0;
+        if (document.getElementById("insideDhaka").checked) {
+            shippingCost = 100;
+        } else if (document.getElementById("outsideDhaka").checked) {
+            shippingCost = 200;
+        }
+
+        var subtotalText = document.getElementById("subtotal").innerText;
+        var subtotal = parseFloat(subtotalText.replace(/[^0-9.-]+/g,"")); // Remove any non-numeric characters
+
+        var total = subtotal + shippingCost;
+
+        document.getElementById("shippingCost").innerText = 'TK ' + shippingCost.toFixed(2);
+        document.getElementById("total").innerText = 'TK ' + total.toFixed(2);
+    }
+</script>

@@ -1,0 +1,345 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\mohiuddin_ecommercewebsite\\views\\home\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\views\\home\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\mohiuddin_ecommercewebsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\mohiuddin_ecommercewebsite\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|d:\\mohiuddin-1280860\\mvc\\project\\mohiuddin_1280860\\mohiuddin_ecommercewebsite\\mohiuddin_ecommercewebsite\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\mohiuddin_ecommercewebsite\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\mohiuddin_ecommercewebsite\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\mohiuddin_ecommercewebsite\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\mohiuddin_ecommercewebsite\\migrations\\202406290836449_mohiuddin-ecommerce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\migrations\\202406290836449_mohiuddin-ecommerce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\mohiuddin_ecommercewebsite\\dal\\mohiuddinecommercecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\dal\\mohiuddinecommercecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\mohiuddin_ecommercewebsite\\views\\home\\productdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\views\\home\\productdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\mohiuddin_ecommercewebsite\\views\\home\\subcategoryproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\views\\home\\subcategoryproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\mohiuddin_ecommercewebsite\\views\\home\\categoryproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\views\\home\\categoryproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\mohiuddin_ecommercewebsite\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\mohiuddin_ecommercewebsite\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\mohiuddin_ecommercewebsite\\views\\order\\placeorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\views\\order\\placeorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\mohiuddin_ecommercewebsite\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\mohiuddin_ecommercewebsite\\content\\admin\\js\\custom.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\content\\admin\\js\\custom.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\mohiuddin_ecommercewebsite\\scripts\\frontscript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\scripts\\frontscript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\mohiuddin_ecommercewebsite\\content\\frontend\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\content\\frontend\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\mohiuddin_ecommercewebsite\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EAB3CC16-B492-415B-ABE4-5BEA66D27263}|Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite.csproj|solutionrelative:mohiuddin_ecommercewebsite\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAJkAAAAAAAAAAAAmwKoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T10:43:42.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AQIAALAAAAAAAAAAAAAgwLoAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-29T07:54:07.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAAAHkAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T11:39:00.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAKYAAAAAAAAAAAAMwJoAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T11:42:59.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Web.config",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\Web.config",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Web.config",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\Web.config",
+              "ViewState": "AQIAAJwAAAAAAAAAAAAAAKYAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-27T10:48:59.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\Migrations\\Configuration.cs",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\Migrations\\Configuration.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAgwEYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T08:34:20.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Shop.cshtml",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Home\\Shop.cshtml",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\Views\\Home\\Shop.cshtml",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Home\\Shop.cshtml",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\Views\\Home\\Shop.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-29T07:37:28.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MohiuddinEcommerceContext.cs",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\DAL\\MohiuddinEcommerceContext.cs",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\DAL\\MohiuddinEcommerceContext.cs",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\DAL\\MohiuddinEcommerceContext.cs",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\DAL\\MohiuddinEcommerceContext.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAAACAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T08:28:04.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "202406290836449_mohiuddin-ecommerce.cs",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Migrations\\202406290836449_mohiuddin-ecommerce.cs",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\Migrations\\202406290836449_mohiuddin-ecommerce.cs",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Migrations\\202406290836449_mohiuddin-ecommerce.cs",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\Migrations\\202406290836449_mohiuddin-ecommerce.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T08:37:02.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductDetails.cshtml",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Home\\ProductDetails.cshtml",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\Views\\Home\\ProductDetails.cshtml",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Home\\ProductDetails.cshtml",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\Views\\Home\\ProductDetails.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAcwDYAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-29T07:41:17.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CategoryProducts.cshtml",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Home\\CategoryProducts.cshtml",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\Views\\Home\\CategoryProducts.cshtml",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Home\\CategoryProducts.cshtml",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\Views\\Home\\CategoryProducts.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAD4AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-29T07:39:53.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PlaceOrder.cshtml",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Order\\PlaceOrder.cshtml",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\Views\\Order\\PlaceOrder.cshtml",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Order\\PlaceOrder.cshtml",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\Views\\Order\\PlaceOrder.cshtml",
+              "ViewState": "AQIAACMAAAAAAAAAAAAcwHcAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T11:57:39.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\Controllers\\CartController.cs",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\Controllers\\CartController.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAIwHwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T11:37:52.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SubCategoryProducts.cshtml",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Home\\SubCategoryProducts.cshtml",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\Views\\Home\\SubCategoryProducts.cshtml",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Home\\SubCategoryProducts.cshtml",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\Views\\Home\\SubCategoryProducts.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAD4AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-29T07:40:36.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "index.cshtml",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Cart\\index.cshtml",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\Views\\Cart\\index.cshtml",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Cart\\index.cshtml",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\Views\\Cart\\index.cshtml",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAAAC8AAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T11:41:44.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAQwHUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T11:59:22.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FrontScript.js",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Scripts\\FrontScript.js",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\Scripts\\FrontScript.js",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Scripts\\FrontScript.js",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\Scripts\\FrontScript.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-27T11:28:10.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "main.js",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Content\\frontend\\js\\main.js",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\Content\\frontend\\js\\main.js",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Content\\frontend\\js\\main.js",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\Content\\frontend\\js\\main.js",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAgwEQAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-27T11:12:38.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Web.config",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\Views\\Web.config",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Views\\Web.config",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\Views\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-27T10:57:04.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "custom.js",
+              "DocumentMoniker": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Content\\admin\\js\\custom.js",
+              "RelativeDocumentMoniker": "Mohiuddin_EcommerceWebsite\\Content\\admin\\js\\custom.js",
+              "ToolTip": "D:\\Mohiuddin-1280860\\MVC\\project\\Mohiuddin_1280860\\Mohiuddin_EcommerceWebsite\\Mohiuddin_EcommerceWebsite\\Content\\admin\\js\\custom.js",
+              "RelativeToolTip": "Mohiuddin_EcommerceWebsite\\Content\\admin\\js\\custom.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-27T11:28:53.504Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

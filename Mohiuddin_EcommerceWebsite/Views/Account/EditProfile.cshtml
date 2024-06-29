@@ -1,0 +1,129 @@
+﻿@model Mohiuddin_EcommerceWebsite.Models.ViewModels.EditProfileViewModel
+@{
+    ViewBag.Title = "EditProfile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="shadow-lg p-3 mb-5 mt-5 bg-body-tertiary rounded">
+                <h2 class="text-center pb-3 pt-3">Edit User Profile</h2>
+                @using (Html.BeginForm("EditProfile", "Account", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            @Html.LabelFor(m => m.Email, new { @class = "control-label" })
+                            <div>
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-6 ">
+                            @Html.LabelFor(m => m.PhoneNumber, new { @class = "control-label" })
+                            <div>
+                                @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.PhoneNumber, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="form-group col-md-6">
+                            @Html.LabelFor(m => m.FirstName, new { @class = "control-label" })
+                            <div>
+                                @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.FirstName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            @Html.LabelFor(m => m.LastName, new { @class = "control-label" })
+                            <div>
+                                @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.LastName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="form-group col-md-6">
+                            @Html.LabelFor(m => m.State, new { @class = "control-label" })
+                            <div>
+                                @Html.TextBoxFor(m => m.State, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.State, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            @Html.LabelFor(m => m.District, new { @class = "control-label" })
+                            <div>
+                                @Html.TextBoxFor(m => m.District, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.District, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="form-group col-md-6">
+                            @Html.LabelFor(m => m.Thana, new { @class = "control-label" })
+                            <div>
+                                @Html.TextBoxFor(m => m.Thana, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Thana, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            @Html.LabelFor(m => m.PostalCode, new { @class = "control-label" })
+                            <div>
+                                @Html.TextBoxFor(m => m.PostalCode, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.PostalCode, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        @Html.LabelFor(m => m.Address, new { @class = "control-label" })
+                        <div>
+                            @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Address, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="form-group col-md-6">
+                            @Html.LabelFor(m => m.Picture, new { @class = "control-label" })
+                            <div>
+                                <input type="file" id="Picture" name="Picture" onchange="readUrl(this)" />
+                                @Html.ValidationMessageFor(m => m.Picture, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="~/Images/Users/user.png" id="imageFile" class="img-thumbnail" style="max-width:200px;" />
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <button type="submit" class="btn btn-success">Save Changes</button>
+                    </div>
+                }
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function readUrl(input) {
+        if (input.files && input.files[0]) {
+            var rdr = new FileReader();
+            rdr.onload = function (e) {
+                $('#imageFile').attr('src', e.target.result);
+            };
+            rdr.readAsDataURL(input.files[0]);
+        }
+    }
+</script>

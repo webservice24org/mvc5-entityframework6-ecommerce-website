@@ -1,0 +1,26 @@
+﻿$(document).ready(function () {
+    $("#brandTable").DataTable({});
+    $(".cateogryTable").DataTable({});
+    $(".subCategoryTable").DataTable({});
+    $(".supplierTable").DataTable({});
+    $(".productTable").DataTable({});
+    $(".allOrders").DataTable({});
+    $(".customersTbl").DataTable({});
+
+        toastr.options = {
+        closeButton: true,
+        progressBar: true,
+        positionClass: 'toast-top-right',
+        showDuration: 300,
+        hideDuration: 1000,
+        timeOut: 5000,
+        extendedTimeOut: 1000,
+        showEasing: 'swing',
+        hideEasing: 'linear',
+        showMethod: 'fadeIn',
+        hideMethod: 'fadeOut',
+        tapToDismiss: false
+    };
+
+
+});

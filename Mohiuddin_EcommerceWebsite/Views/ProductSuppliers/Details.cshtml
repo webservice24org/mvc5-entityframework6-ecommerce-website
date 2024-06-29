@@ -1,0 +1,49 @@
+﻿@model Mohiuddin_EcommerceWebsite.Models.ProductSupplier
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="text-center">Details of Supplier: <span class="text-info">@Html.DisplayFor(model => model.SupplierName)</span></h4>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th> @Html.DisplayNameFor(model => model.SupplierName)</th>
+                            <th> @Html.DisplayNameFor(model => model.ContactEmail)</th>
+                            <th>@Html.DisplayNameFor(model => model.ContactPhone)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@Html.DisplayFor(model => model.SupplierName)</td>
+                            <td>@Html.DisplayFor(model => model.ContactEmail)</td>
+                            <td>@Html.DisplayFor(model => model.ContactPhone)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="mt-2">
+                    <h4>Supplier Address</h4> <hr />
+                </div>
+                
+                <address>
+                    @Html.DisplayFor(model => model.Address)
+                </address>
+            </div>
+            <div class="card-footer">
+
+                @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-info float-start" })
+                @Html.ActionLink("Edit", "Edit", new { id = Model.ProductSupplierId }, new {@class="btn btn-primary float-end"})
+            </div>
+        </div>
+    </div>
+</div>
+
+

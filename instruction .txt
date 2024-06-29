@@ -1,0 +1,147 @@
+Mohiuddin 
+ID: 1280860
+BATCH: CS/SCSL/A-58/01
+
+==================================
+|  How to Run this Project        |
+|                                 |
+===================================
+=> Extract the zip folder
+=> Delete all files and folders inside BIN folder
+=> Open project in Visual Studio
+=> Open Web.config
+=> Open SQL Server management and copy server name
+=> Change Data source
+=> Please change only data source / others will remain same
+=> Now please open tools->NuGet package manager->package manager console
+=> run command
+   update-database
+
+=> Now Open insert-demo-data.sql file (located in project folder) in SQL server management studio
+
+   Press Ctrl+a to select all Click Execute or press F5 from keyboard
+DEMO Data will seed
+
+=> Move to Visual Studio and open HomeController run the project
+
+Admin Login: 
+----------------
+username: admin@example.com
+password: Admin@123
+
+Customer Login: 
+----------------
+username: customer@example.com
+password: Customer@123
+
+Now Ecommerce project will work fine!
+
+
+
+==================================
+|  Alternative Options            |
+|                                 |
+===================================
+
+If update-database not work then please delete migrations folder and run command
+
+=> Enable-Migrations
+Add-Migration mohiuddin-ecommerce
+
+add user seed data to working in admin
+
+var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
+var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
+
+
+if (!roleManager.RoleExists("Admin"))
+{
+    roleManager.Create(new IdentityRole("Admin"));
+}
+
+if (!roleManager.RoleExists("Customer"))
+{
+    roleManager.Create(new IdentityRole("Customer"));
+}
+
+
+if (userManager.FindByName("admin@example.com") == null)
+{
+    var adminUser = new ApplicationUser { UserName = "admin@example.com", Email = "admin@example.com" };
+    var result = userManager.Create(adminUser, "Admin@123");
+
+    if (result.Succeeded)
+    {
+        userManager.AddToRole(adminUser.Id, "Admin");
+    }
+    else
+    {
+
+        foreach (var error in result.Errors)
+        {
+            
+        }
+    }
+}
+
+if (userManager.FindByName("customer@example.com") == null)
+{
+    var customerUser = new ApplicationUser { UserName = "customer@example.com", Email = "customer@example.com" };
+    var result = userManager.Create(customerUser, "Customer@123");
+
+    if (result.Succeeded)
+    {
+        userManager.AddToRole(customerUser.Id, "Customer");
+    }
+    else
+    {
+        // Handle user creation failure
+        foreach (var error in result.Errors)
+        {
+            // Log or handle each error as needed
+        }
+    }
+}
+
+=> Run command 
+Update-Database
+
+if not work please see database catalog name in Web.config  
+
+I hope only update-database will work fine Insha Allah
+
+=> Now open HomeController and run the project
+
+
+=========================
+Working area in ADMIN 
+========================
+
+=> Brand (Edit, update, Delete)
+=> Product Category (Edit, update, Delete)
+=> Product Sub Category (Edit, update, Delete)
+=> Units (Edit, update, Delete)
+=> Suppliers (Edit, update, Delete)
+=> Discounts (Edit, update, Delete)
+=> Products (Edit, update, Delete)
+=> Admin Orders VIEW (Update)
+=> Admin can Mange Customers
+
+
+===================================
+ Working area for FrontEnd
+====================================
+=> User can Order product
+=> User can view product details
+=> User Profile Management
+=> Each user can see his/orders status in user's Panel ----Login -> dropdown menu
+=> User can Register and login from Frontpage
+
+
+
+Thanks 
+Mohiuddin
+ID: 1280860
+
+
+

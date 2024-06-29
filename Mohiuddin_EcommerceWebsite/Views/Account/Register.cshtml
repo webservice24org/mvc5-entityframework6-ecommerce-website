@@ -1,0 +1,68 @@
+﻿@model Mohiuddin_EcommerceWebsite.Models.ViewModels.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-12 justify-content-center d-flex">
+            <div class="card border-0 shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="width: 500px;">
+                <div class="card-header text-center">
+                    <h4>Create a new account.</h4>
+                </div>
+                <div class="card-body">
+
+                    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        
+                        @Html.ValidationSummary("", new { @class = "text-danger" })
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Email, new { @class = "control-label" })
+                            <div>
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    <div class="form-group mt-3">
+                            @Html.LabelFor(m => m.PhoneNumber, new { @class = "control-label" })
+                            <div>
+                                @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.PhoneNumber, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            @Html.LabelFor(m => m.Password, new { @class = "control-label" })
+                            <div>
+                                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "control-label" })
+                            <div>
+                                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group row mt-3">
+                            <div class=" col-md-6">
+                                <button type="submit" class="btn btn-success btn-lg">Register</button>
+                            </div>
+                            <div class="col-md-6 text-end">
+                                <span><small>Allready have an account? <a href="@Url.Action("Login", "Account")" class="btn btn-sm btn-warning">login</a></small></span>
+                                
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

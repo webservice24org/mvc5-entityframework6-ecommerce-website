@@ -1,0 +1,47 @@
+﻿@model Mohiuddin_EcommerceWebsite.Models.Brand
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4>Edit Brand</h4>
+            </div>
+            <div class="card-body">
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        @Html.HiddenFor(model => model.BrandId)
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.BrandName, htmlAttributes: new { @class = "control-label" })
+                            <div>
+                                @Html.EditorFor(model => model.BrandName, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.BrandName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2">
+                                <input type="submit" value="Save" class="btn btn-success" />
+                            </div>
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+            <div class="card-footer">
+                @Html.ActionLink("Back to List", "Index", null, new {@class="btn btn-primary"})
+            </div>
+        </div>
+    </div>
+</div>

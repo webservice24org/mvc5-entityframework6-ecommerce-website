@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Mohiuddin_EcommerceWebsite.Models.ProductSupplier>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="float-start">Add New Supplier</h4>
+                @Html.ActionLink("Create New", "Create", null, new {@class="btn btn-success float-end"})
+            </div>
+            <div class="card-body">
+
+                <table class="table table-bordered supplierTable">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.SupplierName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ContactEmail)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ContactPhone)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Address)
+                            </th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.SupplierName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ContactEmail)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ContactPhone)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Address)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.ProductSupplierId }, new {@class="btn btn-primary"}) 
+                                    @Html.ActionLink("Details", "Details", new { id = item.ProductSupplierId }, new { @class = "btn btn-info" }) 
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.ProductSupplierId }, new { @class = "btn btn-danger" })
+                                </td>
+                            </tr>
+                        }
+
+                </table>
+                </tbody>
+
+            </div>
+        </div>
+    </div>
+</div>

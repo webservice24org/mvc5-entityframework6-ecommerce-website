@@ -1,0 +1,86 @@
+﻿@model Mohiuddin_EcommerceWebsite.Models.ViewModels.OrderConfirmationViewModel
+
+@{
+    ViewBag.Title = "Order Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="breadcrumb-section bg-success">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb__text">
+                    <div class="breadcrumb__option">
+                        <h5 class="text-white">Here is your Order Details</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="order-confirmation pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card border-0">
+                    <div class="card-body shadow-lg bg-body-tertiary rounded">
+                        <p><strong>Order ID:</strong> @Model.OrderId</p>
+                        <p><strong>Order Date:</strong> @Model.OrderDate</p>
+                        <p><strong>Order By:</strong> @Model.Name</p>
+                        <p><strong>Mobile:</strong> @Model.Mobile</p>
+                        <p><strong>Shipping Address:</strong> @Model.ShippingAddress</p>
+                        <p><strong>Order Note:</strong> @Model.OrderNote</p>
+
+                        <h5 class="pb-2 fw-bold">Order Details</h5>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                    <th>Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.OrderDetails)
+                                {
+                                    <tr>
+                                        <td>@item.ProductName</td>
+                                        <td>@item.Quantity</td>
+                                        <td>@item.Price.ToString("C")</td>
+                                        <td>@item.Subtotal.ToString("C")</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                        <p><strong>Shipping Area:</strong> @Model.ShippingArea</p>
+                        <p>
+                            <strong>
+                                Shipping Cost:
+                            </strong>
+                            @if (Model.ShippingArea == "OutsideDhaka")
+                            {
+                                @:200
+                            }
+                            else if (Model.ShippingArea == "InsideDhaka")
+                            {
+                                @:100
+                            }
+                            else
+                            {
+                                @:0
+                            }
+                        </p>
+                        <p><strong>Payment Method:</strong> @Model.PaymentMethod</p>
+                        <p><strong>Total Payable:</strong> @Model.TotalPayable.ToString("C")</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

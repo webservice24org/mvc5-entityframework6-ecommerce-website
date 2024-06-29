@@ -1,0 +1,19 @@
+﻿@model List<Mohiuddin_EcommerceWebsite.Models.ProductCategory>
+
+@foreach (var category in Model)
+{
+    <li>
+        <a href="@Url.Action("CategoryProducts", "Home", new { id = category.ProductCategoryId })">@category.CategoryName</a>
+        @if (category.ProductSubCategories.Any())
+        {
+            <ul>
+                @foreach (var subCategory in category.ProductSubCategories)
+                {
+                    <li>
+                        <a href="@Url.Action("SubCategoryProducts", "Home", new { id = subCategory.ProductSubCategoryId })">@subCategory.SubCategoryName</a>
+                    </li>
+                }
+            </ul>
+        }
+    </li>
+}

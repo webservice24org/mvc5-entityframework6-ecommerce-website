@@ -1,0 +1,58 @@
+﻿@model Mohiuddin_EcommerceWebsite.Models.ViewModels.CancelOrderViewModel
+
+@{
+    ViewBag.Title = "CancelOrder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-3 mb-3">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="shadow-lg bg-body-tertiary rounded p-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="pt-3 mb-3 text-center text-danger">Are You sure, You want to Cancel this Order?</h2>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Product Name</th>
+                                    <th>Product Image</th>
+                                    <th>Quantity</th>
+                                    <th>Total Payable</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>@Model.OrderId</td>
+                                    <td>@Model.ProductName</td>
+                                    <td>
+                                        <img src="@Url.Content(Model.ImageUrl)" alt="Product Image" style="max-width: 100px;" />
+                                    </td>
+                                    <td>@Model.Quantity</td>
+                                    <td>@Model.TotalPayable.ToString("C")</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        @using (Html.BeginForm("CancelOrder", "Account", FormMethod.Post, new { @id = "cancelOrderForm" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.HiddenFor(model => model.OrderId)
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Reason, new { @class = "control-label" })
+                                @Html.TextAreaFor(model => model.Reason, new { @class = "form-control", rows = 5 })
+                                @Html.ValidationMessageFor(model => model.Reason, "", new { @class = "text-danger" })
+                            </div>
+
+                            <button type="submit" class="btn btn-danger mt-2">Confirm Cancel</button>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

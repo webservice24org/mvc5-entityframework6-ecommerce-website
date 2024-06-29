@@ -1,0 +1,67 @@
+﻿@model Mohiuddin_EcommerceWebsite.Models.ViewModels.LoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container  mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card border-0">
+                <div class="card-body justify-content-center d-flex">
+                    @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    <div class="form-login shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="width: 400px;">
+                        <div class="form-group mt-2 mb-3 text-center">
+                            <h4>Welcome to Green shop! </h4>
+                            <span>Please login with valid credintial</span>
+                        </div>
+                        <div class="form-group mb-2">
+                            @Html.LabelFor(m => m.Email, new { @class = "control-label pt-1" })
+                            <div>
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-2">
+                            @Html.LabelFor(m => m.Password, new { @class = "control-label" })
+                            <div>
+                                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <div class="checkbox">
+                                    @Html.CheckBoxFor(m => m.RememberMe)
+                                    @Html.LabelFor(m => m.RememberMe)
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-end">
+                                <p>Not Registered?</p>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-2 row">
+                            <div class="col-md-6">
+                                <button type="submit" class="btn btn-success btn-lg">Login</button>
+                            </div>
+                            <div class="col-md-6 text-end">
+
+                            <a href="@Url.Action("Register", "Account")" class="btn btn-secondary btn-lg">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

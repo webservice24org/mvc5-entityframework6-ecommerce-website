@@ -1,0 +1,81 @@
+﻿@model Mohiuddin_EcommerceWebsite.Models.ViewModels.ProductSubCategoryViewModel
+@{
+    ViewBag.Title = "Edit Product SubCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    string demoImagePath = Url.Content("~/Images/product-category/product-category.jpg");
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="text-center">Edit Product SubCategory: <span class="text-danger">@Html.DisplayFor(model=>model.SubCategoryName)</span></h2>
+            </div>
+            <div class="card-body">
+
+                @using (Html.BeginForm("Edit", "ProductSubCategory", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    @Html.HiddenFor(model => model.ProductSubCategoryId)
+
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.ProductCategoryId, "Main Category", htmlAttributes: new { @class = "control-label" })
+                        <div class="col-md-12">
+                            @Html.DropDownListFor(model => model.ProductCategoryId, new SelectList(Model.ProductCategories, "ProductCategoryId", "CategoryName"), "-- Select Category --", new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.ProductCategoryId, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.SubCategoryName, htmlAttributes: new { @class = "control-label" })
+                        <div class="col-md-12">
+                            @Html.EditorFor(model => model.SubCategoryName, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.SubCategoryName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-md-6">
+                            @Html.LabelFor(model => model.ImageFile, "Image", htmlAttributes: new { @class = "control-label " })
+                            <div>
+
+                                <input type="file" class="form-control" name="ImageFile" id="upImage" onchange="readUrl(this)" />
+                                @Html.ValidationMessageFor(model => model.ImageFile, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="@(string.IsNullOrEmpty(Model.SubCategoryImg) ? demoImagePath : Url.Content(Model.SubCategoryImg))" id="imageFile" class="img-thumbnail" style="max-width:150px;" />
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Save" class="btn btn-success" />
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
+            <div class="card-footer">
+                @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-info" })
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    function readUrl(input) {
+        if (input.files && input.files[0]) {
+            var rdr = new FileReader();
+            rdr.onload = function (e) {
+                $('#imageFile').attr('src', e.target.result);
+            };
+            rdr.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
