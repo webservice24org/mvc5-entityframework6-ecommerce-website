@@ -80,6 +80,8 @@ Run the command: Add-Migration mohiuddin-ecommerce.
 Seed User Data:
 ----------------------------
 Add the following code to the configuration file to seed admin and customer users:
+<br />
+
 var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
 var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
 
