@@ -5,7 +5,7 @@ This is an ASP.NET MVC 5 E-commerce website designed to provide a comprehensive 
 
 Check out our [video demonstration](https://www.youtube.com/watch?v=8Q7e4RHjsoE) on YouTube.
 
-[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=8Q7e4RHjsoE)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8Q7e4RHjsoE?si=01ZriiQ7QlZ7nWRr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 <h2>Features</h2>
